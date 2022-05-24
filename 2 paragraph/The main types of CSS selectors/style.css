@@ -1,0 +1,8 @@
+.show-grid > div {
+	padding: 5px;
+	border: 1px solid black;
+}
+.show-grid {
+	width: 80%;
+	margin-left: 10%;
+}
