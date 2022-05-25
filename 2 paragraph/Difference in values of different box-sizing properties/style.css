@@ -1,0 +1,26 @@
+.col-md-6 {
+	border: 1px solid black;
+}
+.bs-cb {
+	background: lightblue;
+	width: 70%;
+	height: 150px;
+	margin-left: 15%;
+	padding-top: 20px;
+}
+.in-bs-cb {
+	box-sizing: content-box;
+	background: orange;
+	height: 100px;
+	width: 300px;
+	margin: auto auto;
+	border: 5px solid black;
+}
+.in-bs-bb {
+	box-sizing: border-box;
+	background: orange;
+	height: 100px;
+	width: 300px;
+	margin: auto auto;
+	border: 5px solid black;
+}

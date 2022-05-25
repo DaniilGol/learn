@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Пункт 2: Примеры использования основных свойств блочных элементов</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 class="text-center">Отличие значений различных свойств box-sizing</h1>
+	<div class="row">
+		<div class="col-md-6 text-center">
+			box-sizing: content-box;<br/>
+			Это значение по умолчанию. Свойства width и height включают исключительно контент, и не включают padding и border.Пример:<br/>
+			<div class="bs-cb">
+				<div class="in-bs-cb">
+					На данном примере div задано width: 300px; и border: 5px solid black; и в таком случае общая ширина равна 310px
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6 text-center">
+			box-sizing: border-box;<br/>
+			Свойства width и height включают контент, внутренний отступ и границы, но не включают внешний отступ.Пример:<br/>
+			<div class="bs-cb">
+				<div class="in-bs-bb">
+					На данном примере div задано width: 300px; и border: 5px solid black; и в таком случае общая ширина равна 300px
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
