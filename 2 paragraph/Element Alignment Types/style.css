@@ -1,0 +1,36 @@
+#ex1 {
+	width: 70%;
+	margin-left: 15%;
+	background: lightsalmon;
+	margin-bottom: 10px;
+}
+#ex2 {
+	margin-right: 15%;
+	margin-left: 15%;
+	background: lightskyblue;
+	margin-bottom: 10px;
+}
+#ex3 {
+	width: 70%;
+	margin: 0 auto;
+	background: lightsteelblue;
+	margin-bottom: 10px;
+}
+#ex4 {
+	background: lightgreen;
+	width: 70%;
+}
+#ex5 {
+	position: absolute;
+    width: 1300px;
+    left: 50%;
+    margin-left: -650px;
+    background: lightseagreen;
+}
+#ex6 {
+	position: absolute;
+    width: 70%;
+    left: 50%;
+    margin-left: -35%;
+    background: lightslategrey;
+}
