@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Пункт 2: Отличие значения свойств: display:  block, inline-block</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 class="text-center">Пункт 2: Отличие значения свойств: display:  block, inline-block</h1>
+	<div class="text-center dis-b">
+		<h3>Свойство block означает, что блочные элементы располагаются один над другим, вертикально а также что блок стремится расшириться на всю доступную ширину. Пример:<br/></h3>
+		<div class="dis-b-t">
+			<div id="dis-b-e1" class="dis-b-e">100x100</div>
+			<div id="dis-b-e2" class="dis-b-e">50x80</div>
+			<div id="dis-b-e3" class="dis-b-e">60x140</div>
+			<div id="dis-b-e4" class="dis-b-e">140x60</div>
+			<div class="dis-b-e">Высота и ширина не заданы</div>
+		</div>
+	</div>
+	<div class="text-center dis-ib">
+		<h3>Свойство inline-block означает элемент, который продолжает находиться в строке, но при этом может иметь важные свойства блока. Пример:<br/></h3>
+		<div class="dis-ib-t">
+			<div id="dis-ib-e1" class="dis-ib-e">100x100</div>
+			<div id="dis-ib-e2" class="dis-ib-e">50x80</div>
+			<div id="dis-ib-e3" class="dis-ib-e">60x140</div>
+			<div id="dis-ib-e4" class="dis-ib-e">140x60</div>
+			<div class="dis-ib-e">Высота и ширина не заданы</div>
+		</div>
+	</div>
+</body>
+</html>
