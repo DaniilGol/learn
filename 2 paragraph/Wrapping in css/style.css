@@ -1,0 +1,29 @@
+.float-left {
+	float: left;
+}
+#ex1 {
+	background: rgba(100, 100, 0, 0.5);
+	width: 100px;
+	height: 100px;
+}
+#ex2 {
+	width: 300px;
+	height: 70px;
+	background: orange;
+}
+.ex3 {
+	clear: left;
+}
+#ex4{
+	background: purple;
+}
+#ex5 {
+	background: rgba(255, 192, 203, 0.9);
+}
+#ex6 {
+	overflow: auto;
+	background: lightsalmon;
+}
+#ex7 {
+	background: lightskyblue;
+}

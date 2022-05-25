@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Пункт 2: Обтекание в CSS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1 class="text-center">Обтекание в CSS</h1>
+	<h3 class="text-center">За обтекание отвечает float: left | right | none | inherit;</h3>
+	Другие непозиционированные блочные элементы без float ведут себя так, как будто элемента с float нет, так как он убран из потока. Пример:<br/>
+	<div id="ex1" class="float-left">div с float</div>
+	<div id="ex2">div без float</div>
+	<div class="ex3">На данном примере показано, что div без float входит внутрь div с float но при этом текст видит float и обтекает его.</div>
+	Также может случиться такое, что у какого-либо div внутри будет что-либо с float, в таком случае div не увидит float элемент и просто пропустит его, чтобы это исправить можно родителю задать overflow: auto; Пример:<br/>
+	<div id="ex4">
+		<div id="ex5" class="float-left">div<br/>с float</div>
+		Что- либо
+	</div>
+	<div id="ex6" class="ex3">
+		<div id="ex7" class="float-left">div<br/>с float</div>
+		Что- либо
+	</div>
+</body>
+</html>
