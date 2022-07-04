@@ -5,81 +5,124 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Макет сайта №2</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
-		<img class="logo" src="content/logo.png">
-		<div class="nm">
-			<h6>Never Gonna Give You Up<br/>Магазин музыки</h6>
+		<div class="head-info">
+			<img class="head-info-logo" src="content/logo.png">
+			<div class="head-info-i">
+				<h6><div class="head-info-i-name">Never Gonna Give You Up</div><div class="head-info-i-i">Магазин музыки</div></h6>
+			</div>
 		</div>
-		<button class="donate" onclick="document.location='https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Купить подписку</button>
-		<button class="login">Войти</button>
-		<textarea class="search" placeholder="Искать музыку..."></textarea>
+		<div class="head-search">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Искать музыку" aria-label="Искать музыку" aria-describedby="input-group-right">
+			</div>
+		</div>
+		<div class="head-btns">
+			<button class="head-btns-donate btn btn-outline-dark">Купить подписку</button>
+			<button class="head-btns-login btn btn-outline-dark">Войти</button>
+		</div>
 	</header>
-	<div id="lefter">
-		<br/>
-		<h4><a href="#">Популярное</a></h4><br/><br/>
-		<h4><a href="#">Джазз</a></h4><br/>
-		<h4><a href="#">Блюз</a></h4><br/>
-		<h4><a href="#">Классика</a></h4><br/>
-		<h4><a href="#">Фонк</a></h4><br/>
-		<h4><a href="#">Рэп</a></h4><br/>
-	</div>
-	<content>
-		<h1 class="dir">Популярное</h1>
-		<div class="row tracks">
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">Never Gonna Give You Up<br/>
-				Rick Astley</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">Группа крови<br/>
-				Кино</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">Пантери<br/>
-				Роки Вулович</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">Astral step<br/>
-				Shadowraze</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">No<br/>
-				Plenka</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">CITY LIGHT$ 2<br/>
-				$WERVE</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">Around the world<br/>
-				Daft Punk</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">Закамский квас<br/>
-				Реклама</div>
-			</div>
-			<div class="col-md-4">
-				<img class="play" src="content/play.png">
-				<div class="track-info">I'm Osama<br/>
-				Rucka Rucka Ali</div>
+	<div class="nc">
+		<div class="nav">
+			<button class="btn btn-outline-darkbtn btn-outline-dark ">Популярное</button>
+			<button class="btn btn-outline-darkbtn btn-outline-dark">Джазз</button>
+			<button class="btn btn-outline-darkbtn btn-outline-dark btndest">Блюз</button>
+			<button class="btn btn-outline-darkbtn btn-outline-dark btndest">Классика</button>
+			<button class="btn btn-outline-darkbtn btn-outline-dark btndest">Фонк</button>
+			<button class="btn btn-outline-darkbtn btn-outline-dark btndest">Реп</button>
+			<div class="dropdown notdest">
+				<button class="btn btn-outline-darkbtn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+			    Ещё
+				</button>
+				<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuDark">
+			    	<li><a class="dropdown-item" href="#">Блюз</a></li>
+			    	<li><a class="dropdown-item" href="#">Классика</a></li>
+			    	<li><a class="dropdown-item" href="#">Фонк</a></li>
+			    	<li><a class="dropdown-item" href="#">Реп</a></li>
+			    	<li><a class="dropdown-item" href="#">Купить подписку</a></li>
+			    	<li><a class="dropdown-item" href="#">Войти</a></li>
+				</ul>
 			</div>
 		</div>
-	</content>
+		<content>
+			<div class="dir">
+				<h1>Популярное:</h1>
+			</div>
+			<div class="tracks">
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>Never Gonna Give You Up</div>
+						<div>Rick Astley</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>Группа крови</div>
+						<div>Кино</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>Пантери</div>
+						<div>Роки Вулович</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>Astral step</div>
+						<div>Shadowraze</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>No</div>
+						<div>Plenka</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>CITY LIGHT$ 2</div>
+						<div>$WERVE</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>Around the world</div>
+						<div>Daft Punk</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>Закамский квас</div>
+						<div>Реклама</div>
+					</div>
+				</div>
+				<div class="track">
+					<img class="play" src="content/play.png">
+					<div class="track-info">
+						<div>I'm Osama</div>
+						<div>Rucka Rucka Ali</div>
+					</div>
+				</div>
+			</div>
+		</content>
+	</div>
 	<footer>
 		<div class="ctext">
-			<h1>NGGYU</h1>
-			<h6>Все права защищены<br/>ⒸNGGYU 2009-2022</h6>
+			<h3>NGGYU</h3>
+			<h6>Все права защищеныⒸNGGYU 2009-2022</h6>
 		</div>
 		<div class="link">
 			<a href="#">Сообщить об ошибке</a> / <a href="#">Обратная связь</a> / <a href="#">Оставить отзыв</a> / <a href="#">Описание услуг</a>
